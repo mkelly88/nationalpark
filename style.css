@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+.logo {
+    cursor: pointer;
+}
+.explore-button {
+    padding: 9px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover {
+    background-color: #f6be00;
+}
+
+.carousel-inner {
+    height: 600px;
+    background-color: black;
+}
+
+.text-overlay {
+    background-color: transparent;
+    color: white;
+    position:absolute;
+    z-index:12;
+    top:40%;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-family: "Garamond", sans-serif;
+    font-size:1000%
+}
+
+img {
+    opacity: .5;
+    width: 100%;
+}
+
+.text-button{
+    padding: 9px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    outline:none;
+}
+
+.card-group {
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.2);
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    background-color: black;
+    border: none;
+}
+
+i {
+    text-align:center;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.text-overlay-2 {
+    background-color: transparent;
+    color: white;
+    position:absolute;
+    z-index:12;
+    top:35%;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-family: "Garamond", sans-serif;
+    font-size:800%;
+}
+
+.search {
+    display:block;
+    justify-content:center;
+    color: white;
+    position:absolute;
+    z-index:12;
+    width:500px;
+    text-align: center;
+    bottom:0px;
+    background-color: #fff;
+    padding: 50px 60px 40px 60px;
+    margin-top: -3rem;
+    margin-left:29%;
+}
+
+input {
+    width: 400px;
+    text-align:center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.searchButton {
+    background-color:black;
+    color: white;
+    border-style: none;
+    padding: 10px 20px 13px 20px;
+}
+
+.logo {
+    height: 50px;
+    width: 200px;
+}
+
+
+

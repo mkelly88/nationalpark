@@ -62,9 +62,26 @@ $(document).ready(() => {
         <img src="${park.images[1].url}">
         <h5 class="parkName">${park.fullName}</h5>
        </div>
-        <div class="contact row">
+        <div class="col-md-4" id="contactInfo>
          <h2> ${park.adresses[0].url} </h2>
+         <h2> ${park.contacts.emailAddresses} </h2>
+         <h2> ${park.contacts.phoneNumbers} </h2>
+         <h2> ${park.operatingHours} </h2>
         </div>
+        <div class="parkDesc">
+         <p> ${park.description} </p>
+        </div>
+        <div class="weather">
+         <p> ${park.weatherInfo} </p>
+        </div>
+        <div class="activeImg">
+          <img src="${park.images[2].url}">
+          <p> ${park.activities} </p>
+        </div>
+        <div class="direction"
+         <p> ${park.directionsInfo} </p>
+        </div>
+
       </div>
          `;
 

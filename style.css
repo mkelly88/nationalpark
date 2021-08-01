@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+/*home page*/
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -25,6 +26,7 @@ header {
 
 .logo {
     cursor: pointer;
+    size:500px;
 }
 
 .logo:hover {
@@ -62,22 +64,33 @@ button:hover {
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 .d-block {
     opacity: .5;
     width: 100%;
 }
 
-.text-button{
-   display:inline-block;
-   border:none;
-   background-color:black;
-
+.textButton {
+    position:absolute;
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    top: 500px;
+    z-index:12;
+    color:white;
+    margin-left:43%;
+    background-color:black;
+    border:none;
 }
+
+
 
 .card-group {
     justify-content: space-between;
     background-color: rgba(0,0,0,0.2);
     font-family: "Montserrat", sans-serif;
+    width:100%;
 }
 
 .card {
@@ -97,32 +110,67 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+    .text-overlay {
+      font-size: 50px;
+      top:20%;
+    }
+    .card-group {
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        background-color:black;
+    }
+    .carousel-inner {
+        height:250px;
+    }
+    img.logo {
+        size:50px;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+      .text-overlay {
+          font-size: 100px;
+          top:20%;
+      }
+      .carousel-inner {
+          height:425px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+        .text-overlay {
+            font-size: 150px;
+            top:30%;
+        }
+
+    
+
+
+/*explore page*/
 .text-overlay-2 {
     background-color: transparent;
     color: white;
     position:absolute;
     z-index:12;
-    top:35%;
     left:0;
     width:100%;
     text-align:center;
     font-family: "Garamond", sans-serif;
     font-size:800%;
     text-shadow: 2px 2px 4px #000000;
+    margin-top:20%;
 } 
 
-.searchBar {
-    display:flex;
-    justify-content:space-around;
-    align-items:flex-end;
-    padding: 60px 40px 40px 60px;
-    width:100%;
-    position:absolute;
-    bottom:20px;
-    z-index:12;
+.form-group {
+   width:100%;
+   background-color:black;
 }
 
-input {
+.form-control {
     width: 400px;
     text-align:center;
     font-family: "Montserrat", sans-serif;
@@ -175,8 +223,106 @@ input {
     padding:10px;
 }
 
+@media screen and (max-width: 600px) {
+    .text-overlay-2 {
+      font-size: 50px;
+      top:40%;
+    }
+    
+    .carousel-inner {
+        height:250px;
+    }
+
+    .form-group {
+        width:100%;
+        padding:0px;
+        margin:0;
+        justify-content:center;
+
+    }
+
+    .form-control {
+        width:100%;
+        padding:0;
+    }
+
+    .searchButton {
+        padding:5px 10px 10px 10px;
+        align-items:center;
+    }
+
+    .logo {
+        height:20px;
+        width:100px;
+        position:absolute;
+    }
+      
+  }
+
+  @media screen and (min-width: 600px) {
+      .carousel-inner {
+          height:300px;
+      }
+
+      .searchBar {
+        margin-left:35%;
+        padding:0px;
+        bottom:500px;
+    }
+
+    input {
+        width:200px;
+    }
+
+    .text-overlay-2 {
+        top:0%;
+    }
+
+    }
+
+    @media screen and (min-width: 768px) {
+        .text-overlay-2 {
+            font-size: 150px;
+            top:20%;
+        }
+        .carousel-inner {
+            height:500px;
+        }
+        .searchBar {
+            margin-left:30%;
+            padding:0px;
+            bottom:800px;
+            width:100%;
+        }
+    
+        .states {
+            width:500px;
+        }
+    
+        .searchButton {
+            padding:5px 10px 10px 10px
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+           }
+        .text-overlay-2 {
+            top:10%;
+        }
+    
+        input {
+            width:300px;
+        }
+    
+        .searchButton {
+            padding:5px 10px 10px 10px
+        }
+              
+
+/*park page*/
 .parkName {
     font-family: "Montserrat", sans-serif;
     color:black;
 }
 
+    }

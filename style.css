@@ -321,8 +321,64 @@ footer {
 
 /*park page*/
 .parkName {
-    font-family: "Montserrat", sans-serif;
-    color:black;
+    background-color: transparent;
+    color: white;
+    position:absolute;
+    z-index:12;
+    top:40%;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-family: "Garamond", sans-serif;
+    font-size:800%;
+    text-shadow: 2px 2px 4px #000000;
 }
+
+.headerimg {
+    width:100%;
+    margin:0;
+    padding:0;
+    height: 600px;
+    background-color: black;
+    opacity:.75;
+}
+
+.weather {
+    background-color:black;
+    color:white;
+    padding: 25px;
+    text-align:center;
+    padding-top: 20px;
+
+}
+
+#parkDesc {
+    display:block;
+    width:100%;
+    text-align:center;
+
+}
+
+.activities {
+    display:inline-block;
+    width:100%;
+
+}
+
+.actList {
+    align-self:flex-end;
+    padding-top:20px;
+}
+ #contactinfo {
+     display:inline-block;
+ }
+
+ .direction {
+     background-color:black;
+     color:white;
+     text-align:center;
+     padding:20px;
+     margin-top:10px;
+ }
 
     }

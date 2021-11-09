@@ -26,7 +26,8 @@ header {
 
 .logo {
     cursor: pointer;
-    size:500px;
+    height: 100px;
+    width: 50px;
 }
 
 .logo:hover {
@@ -349,6 +350,7 @@ footer {
     padding: 25px;
     text-align:center;
     padding-top: 20px;
+    font-size:larger;
 
 }
 
@@ -356,6 +358,7 @@ footer {
     display:block;
     width:100%;
     text-align:center;
+    font-size:larger;
 
 }
 
